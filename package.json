@@ -1,20 +1,22 @@
 {
-  "name": "quote-graphics-generator-application",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "jimp": "^0.16.1",
-    "nodemon": "^2.0.16"
-  },
-  "devDependencies": {
-    "dotenv": "^16.0.0"
-  }
+	"name": "quote-graphics-generator-application",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node app.js",
+    "dev": "nodemon app.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"jimp": "^0.16.1",
+		"nodemon": "^2.0.16"
+	},
+	"devDependencies": {
+		"dotenv": "^16.0.0"
+	}
 }
