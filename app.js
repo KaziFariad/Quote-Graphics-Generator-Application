@@ -1,4 +1,4 @@
-import { readFile, writeFile } from 'fs';
+import { readFile } from 'fs';
 
 readFile('./quotesDb.json', 'utf8', (err, response) => {
 	if (err) {
