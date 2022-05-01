@@ -13,9 +13,11 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
+		"axios": "^0.27.2",
 		"handy-storage": "^2.1.6",
 		"jimp": "^0.16.1",
-		"nodemon": "^2.0.16"
+		"nodemon": "^2.0.16",
+		"pexels": "^1.3.0"
 	},
 	"devDependencies": {
 		"dotenv": "^16.0.0"
