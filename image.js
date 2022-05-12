@@ -106,4 +106,5 @@ export const editImage = async (filePath, quote, author) => {
 	);
 
 	image.write(newFilePath);
+	return newFilePath;
 };
