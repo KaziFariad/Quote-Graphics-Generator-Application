@@ -45,8 +45,8 @@ client.on('ready', async () => {
 
 client.on('message', async (msg) => {
 	if (msg.body == '!pic') {
-		let [path, quote] = await imageMainFn();
 		msg.reply('sending a quote graphic picture...');
+		let [path, quote] = await imageMainFn();
 		let chat = await msg.getChat();
 		// await new Promise((r) => setTimeout(r, 10000));
 		const media = MessageMedia.fromFilePath(path);
