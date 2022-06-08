@@ -4,8 +4,6 @@ import { getQuote } from './quote.js';
 import { getImageLink, saveImage, editImage } from './image.js';
 import wwebpkgs from 'whatsapp-web.js';
 const { Client, LocalAuth, MessageMedia } = wwebpkgs;
-import qrcpkgs from 'qrcode-terminal';
-const { qrcode } = qrcpkgs;
 
 const imageMainFn = async () => {
 	const id = handleStorage('counter.json');
@@ -23,12 +21,13 @@ const imageMainFn = async () => {
 
 const client = new Client({
 	authStrategy: new LocalAuth(),
+	puppeteer: { headless: false },
 });
 
 client.initialize();
 
 client.on('qr', (qr) => {
-	qrcode.generate(qr, { small: true });
+	console.log('QR RECEIVED', qr);
 });
 
 client.on('authenticated', () => {
