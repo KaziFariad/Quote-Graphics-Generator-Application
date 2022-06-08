@@ -8,4 +8,4 @@ The image generated can be shared via Whatsapp to contacts from the authenticate
 * get pexels api key from https://www.pexels.com/api/ and put it in .env file as API_KEY
 * npm start
 * scan the qr code using the whatsapp app
-* have someone send a message to the phone number you scanned
+* have someone send a message "!pic"(without quotes) to the phone number you scanned
